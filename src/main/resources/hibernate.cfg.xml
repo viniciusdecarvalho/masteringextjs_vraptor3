@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="main">
+	
+		<!-- <property name="hibernate.show_sql">true</property> -->
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">none</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+ 		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/sakila</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">stitecnologia</property>
+		
+		<mapping class="mvcs.model.entity.Actor" />
+		<mapping class="mvcs.model.entity.Address" />
+		<mapping class="mvcs.model.entity.Category" />
+		<mapping class="mvcs.model.entity.City" />
+		<mapping class="mvcs.model.entity.Country" />
+		<mapping class="mvcs.model.entity.Customer" />
+		<mapping class="mvcs.model.entity.Film" />
+		<mapping class="mvcs.model.entity.FilmActor" />
+		<mapping class="mvcs.model.entity.FilmActorPK" />
+		<mapping class="mvcs.model.entity.FilmCategory" />
+		<mapping class="mvcs.model.entity.FilmCategoryPK" />
+		<mapping class="mvcs.model.entity.FilmText" />
+		<mapping class="mvcs.model.entity.Group" />
+		<mapping class="mvcs.model.entity.Inventory" />
+		<mapping class="mvcs.model.entity.Language" />
+		<mapping class="mvcs.model.entity.Menu" />
+		<mapping class="mvcs.model.entity.Payment" />
+		<mapping class="mvcs.model.entity.Rental" />
+		<mapping class="mvcs.model.entity.Staff" />
+		<mapping class="mvcs.model.entity.Store" />
+		<mapping class="mvcs.model.entity.User" />
+		<mapping class="mvcs.model.entity.UserPK" />
+			
+	</session-factory>
+</hibernate-configuration>
